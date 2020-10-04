@@ -27,10 +27,10 @@
         <form>
             <fieldset>
                 <legend>Informations</legend>
-                    <label for="prenom">Prénom*</label><input type="text" id="prenom" name="prenom" value="Pierre" required>
-                    <label for="nom">Nom*</label><input type="text" id="nom" name="nom" value="Gosson" required>
-                    <label for="mail">Mail*</label><input type="email" id="mail" name="mail" value="pierre.gosson@cpe.fr" required><br>
-                    <label for="telephone">Téléphone</label><input type="tel" id="telephone" name="telephone" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}">
+                    <label for="prenom">Prénom*</label><input type="text" id="prenom" name="prenom"  placeholder="Prénom" required>
+                    <label for="nom">Nom*</label><input type="text" id="nom" name="nom" placeholder="Nom" required>
+                    <label for="mail">Mail*</label><input type="email" id="mail" name="mail" placeholder="ex: jean.dupont@gmail.com" required><br>
+                    <label for="telephone">Téléphone</label><input type="tel" id="telephone" name="telephone" placeholder="ex : 06 41 42 43 46" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}">
             </fieldset>
             <fieldset>
                 <legend>Durée</legend>
@@ -47,7 +47,16 @@
 
             </fieldset>
             <fieldset>
-                <label for="renseignement">Demande de renseignement :</label><input type="text" id="renseignement" name="renseignement">
+                <label for="renseignement">Demande de renseignement :</label><input type="text" id="renseignement" name="renseignement" placeholder="Toute demande de renseignement et chose dont vous souhaitez nous informer" size="200">
+            </fieldset>
+            <fieldset>
+                <label for="prix">Prix : </label><input type="number" id="prix" name="prix" min="0">
+
+            </fieldset>
+               
+            <fieldset>
+                <label for="raz">Remise à zéro</label><input type="reset" id="raz" name="raz" >
+                <label for="valider">Valider</label><input type="submit" id="valider" name="valider">
 
 
             </fieldset>
