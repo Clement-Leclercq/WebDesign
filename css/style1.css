@@ -12,30 +12,27 @@ footer {
 }
 header img.logo{
     width: 100px;
-    position: middle;
 }
 #iconYtb {
     width: 50px;
-    bottom: 0;
-    right: 0;
 }
 #iconFb {
     width: 50px;
-    bottom: 0;
-    right: 0;
 }
 #iconIg {
     width: 50px;
-    bottom: 0;
-    right: 0;
 }
 #iconTw {
     width: 50px;
-    bottom: 0;
-    right: 0;
 }
 #iconAdr {
     width: 50px;
-    bottom: 0;
-    left: 0;
+}
+footer div.gauche{
+    float: left;
+    margin:2.5%;
+}
+footer div.droite{
+    float: right;
+    margin:2.5%;
 }
