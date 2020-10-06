@@ -11,7 +11,7 @@ footer {
     width: 100%;
 }
 img.logo{
-    width: 100px;
+    width: 125px;
 }
 #iconYtb {
     width: 50px;
@@ -35,4 +35,23 @@ footer div.gauche{
 footer div.droite{
     float: right;
     margin:2.5%;
+}
+footer div.milieu{
+    float: center;
+    margin:2.5%;
+}
+.headernav {
+    overflow: hidden;
+    text-align: center;
+}
+.headernav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.headernav a.active {
+    background-color:lightgrey;
+    color: white;
 }
