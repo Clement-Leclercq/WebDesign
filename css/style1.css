@@ -10,9 +10,6 @@ footer {
     height: 150px;
     width: 100%;
 }
-img.logo{
-    width: 125px;
-}
 #iconYtb {
     width: 50px;
 }
@@ -40,6 +37,9 @@ footer div.milieu{
     float: center;
     margin:2.5%;
 }
+footer div.milieu .logo{
+    width: 125px;
+}
 .headernav {
     overflow: hidden;
     text-align: center;
@@ -54,4 +54,8 @@ footer div.milieu{
 .headernav a.active {
     background-color:lightgrey;
     color: white;
+}
+header img.logo{
+    width: 125px;
+    margin-left: 45%;
 }
