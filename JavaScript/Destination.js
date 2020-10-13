@@ -7,6 +7,11 @@ class Destination {
       this._animaux = panimaux;
       this._dateD = pdateD;
       this._dateR = pdateR;
-
     }
+
+    afficher() {
+        console.log("Voyage" + this._ville + ", " + this.pays + "Déjeuner compris : " + this._dejeuner + "animaux : " + this._animaux + "date départ : " + this._dateD + "date retour : " + this._dateR + "prix : " + this._prix)
+    }
+
+    
   }
