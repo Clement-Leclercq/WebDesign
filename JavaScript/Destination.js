@@ -12,6 +12,16 @@ class Destination {
     afficher() {
         console.log("Voyage" + this._ville + ", " + this.pays + "Déjeuner compris : " + this._dejeuner + "animaux : " + this._animaux + "date départ : " + this._dateD + "date retour : " + this._dateR + "prix : " + this._prix)
     }
-
-    
   }
+var Tunisie = new Destination ("Tunisie","Djerba","1406€","Autorisés","Inclu","02/11/2021","10/11/2021")
+var Madagascar = new Destination ("Madagascar","Tananarive","1899€","Non Autorisés","Non inclu","10/12/2020","17/12/2020")
+var Canada = new Destination ("Canada","Ottawa","1599€","Autorisés","Non inclu","03/01/2021","10/01/2021")
+var Japon = new Destination ("Japon","Tokyo","2548€","Non Autorisés","Inclu","15/04/2021","30/04/2021")
+var Mexique = new Destination ("Mexique","Cancun","945€","Non Autorisés","Inclu","02/05/2021","10/05/2021")
+var Guadeloupe = new Destination ("Antilles:Guadeloupe","Basse-Terre","1708€","Autorisés","Inclu","02/11/2022","13/11/2022")
+var Cap_Vert = new Destination ("Cap Vert","Praia","1377€","Non Autorisés","Inclu","04/12/2022","17/12/2022")
+var Thaïlande = new Destination ("Thaïlande","Bangkok","1906€","Non Autorisés","Non Inclu","12/04/2022","25/04/2022")
+var Indonésie = new Destination ("Indonésie","Jakarta","1299€","Non Autorisés","Inclu","01/06/2021","15/06/2021")
+var Vietnam = new Destination ("Vietnam","Hanoï","1449€","Autorisés","Inclu","22/01/2022","31/01/2022")
+var Chypre = new Destination ("Chypre","Nicosie","1506€","Non Autorisés","Non Inclu","06/12/2021","17/12/2021")
+var Chine = new Destination ("Chine","Pékin","1863€","Non Autorisés","Inclu","02/11/2020","10/11/2020")
