@@ -27,3 +27,4 @@ var Chypre = new Destination ("Chypre","Nicosie","1506€","Non Autorisés","Non
 var Chine = new Destination ("Chine","Pékin","1863€","Non Autorisés","Inclu","02/11/2020","10/11/2020")
 
 var Destinations = [Tunisie , Madagascar , Canada , Japon , Mexique , Guadeloupe , Cap_Vert , Thaïlande , Indonésie , Vietnam , Chypre , Chine]
+Destinations.sort()
