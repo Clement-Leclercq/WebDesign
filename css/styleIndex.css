@@ -2,7 +2,6 @@ header {
     margin: 10px;
     background-color: darkslategray;
     height: 150px;
-    width: 100%;
     text-align: center;
 }
 .headernav {
@@ -26,9 +25,9 @@ footer {
     margin: 10px;
     background-color: darkslategray ;
     height: 150px;
-    width: 100%;
-    display: flex;
+    display: grid;
     justify-content: space-between;
+    grid-template-columns: 40% auto 40%;
 }
 #iconYtb {
     width: 50px;
@@ -57,20 +56,22 @@ footer div.milieu{
     margin-top: 12.5px;
     margin-bottom: 12.5px;
 }
-footer div.milieu .logo{
+footer .logo{
     width: 125px;
 }
-footer div.gauche{
-    margin-left: 2.5%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+footer div.gauche, footer div.droite{
+    margin: 50px 2.5%;
 }
 footer div.droite{
-    margin-right: 2.5%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    text-align: right;
 }
 footer div a.texte{
     margin-top: 10px;
     margin-bottom: 10px;
+}
+body {
+    background-image: url(../images/nuages.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
