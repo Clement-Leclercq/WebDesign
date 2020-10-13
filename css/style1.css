@@ -3,12 +3,32 @@ header {
     background-color: darkslategray;
     height: 150px;
     width: 100%;
+    text-align: center;
 }
+.headernav {
+    overflow: hidden;
+}
+.headernav a {
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.headernav a.active {
+    background-color:lightgrey;
+    color: white;
+}
+header img.logo{
+    width: 125px;
+}
+
 footer {
     margin: 10px;
     background-color: darkslategray ;
     height: 150px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 #iconYtb {
     width: 50px;
@@ -25,37 +45,11 @@ footer {
 #iconAdr {
     width: 50px;
 }
-footer div.gauche{
-    float: left;
-    margin:2.5%;
-}
-footer div.droite{
-    float: right;
-    margin:2.5%;
-}
-footer div.milieu{
-    float: center;
-    margin:2.5%;
+footer div a{
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
 }
 footer div.milieu .logo{
     width: 125px;
-}
-.headernav {
-    overflow: hidden;
-    text-align: center;
-}
-.headernav a {
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-.headernav a.active {
-    background-color:lightgrey;
-    color: white;
-}
-header img.logo{
-    width: 125px;
-    margin-left: 45%;
 }
