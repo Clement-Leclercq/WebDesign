@@ -1,0 +1,112 @@
+header {
+    margin: 10px;
+    background-color: darkslategray;
+    height: 150px;
+    text-align: center;
+}
+.headernav {
+    overflow: hidden;
+}
+.headernav a {
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.headernav a.active {
+    background-color:lightgrey;
+    color: white;
+}
+header img.logo{
+    width: 125px;
+}
+
+footer {
+    margin: 10px;
+    background-color: darkslategray ;
+    height: 150px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 40% auto 40%;
+}
+#iconYtb {
+    width: 50px;
+}
+#iconFb {
+    width: 50px;
+}
+#iconIg {
+    width: 50px;
+}
+#iconTw {
+    width: 50px;
+}
+#iconAdr {
+    width: 50px;
+}
+#iconMail {
+    width: 50px;
+}
+footer div a{
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+}
+footer div.milieu{
+    margin-top: 12.5px;
+    margin-bottom: 12.5px;
+}
+footer .logo{
+    width: 125px;
+}
+footer div.gauche, footer div.droite{
+    margin: 50px 2.5%;
+}
+footer div.droite{
+    text-align: right;
+}
+footer div a.texte{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+body {
+    background-image: url(../images/nuages.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: space-between;
+}
+
+.panorama {
+    height: 406px;
+    width: 540px;
+}
+.container {
+    position: relative;
+    width: 50%;
+  }
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 406px;
+    width: 540px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  .container:hover .overlay {
+    opacity: 0.8;
+  }
+  div.overlay p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
