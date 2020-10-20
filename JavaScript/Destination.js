@@ -12,6 +12,9 @@ class Destination {
     afficher() {
         console.log("Voyage" + this._ville + ", " + this.pays + "Déjeuner compris : " + this._dejeuner + "animaux : " + this._animaux + "date départ : " + this._dateD + "date retour : " + this._dateR + "prix : " + this._prix)
     }
+    getImage() {
+      return "../images/"+this._pays+".jpg";
+    }
   }
 
 
