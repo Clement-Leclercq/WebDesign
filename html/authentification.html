@@ -5,7 +5,9 @@
         <title>Authentification</title>
         <link rel="stylesheet" href=../css/styleIndex.css>
         <script src='../JavaScript/ScrollUp.js'></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src='../JavaScript/Credentials/DataConnexion.js'></script>
+        <script src='../JavaScript/Credentials/ScriptAuthentification.js'></script>
+        <script src='../JavaScript/Credentials/ScriptInscription.js'></script>
     </head>
     <body>
         <header>
@@ -19,28 +21,28 @@
             </nav>
             
         </header>
-        <form>
+        <form id="formConn" class="hide">
             <fieldset>
                 <legend>Connexion</legend>
                     <label for="usrname1">Identifiant: </label><input type="text" id="usrname1" name="username" value="test" required>
                     <label for="pword1">Mot de passe: </label><input type="password" id="pword1" name="password" value="test" required>
-                    <input type="submit" value="Se connecter">
+                    <input type="submit" value="Se connecter" id="submitConn">
             </fieldset>
         </form>
-        <form>
+        <form id="formInsc" class="hide">
             <fieldset>
                 <legend>Inscription</legend>
                     <label for="usrname2">Identifiant: </label><input type="text" id="usrname2" name="username" value="test" required>
                     <label for="pword2">Mot de passe: </label><input type="password" id="pword2" name="password" value="test" required>
                     <label for="checkpword2">Confirmer votre mot de passe: </label><input type="password" id="checkpword2" name="checkpassword" value="test" required>
                     <label for="mail">Adresse Mail: </label><input type="email" id="mail" name="email" value="test@test.com" required>
-                    <input type="submit" value="S'inscrire">
+                    <input type="submit" value="S'inscrire" id="submitInsc">
             </fieldset>
         </form>
-        <div>
+        <div id="divConn" class="hide">
             <a href="index.html">Vous êtes maintenant connecté au site. Voulez-vous retourner à l'acceuil ?</a>
         </div>
-        <div>
+        <div id="divInsc" class="hide">
             <a href="index.html">Vous êtes maintenant inscrit au site. Voulez-vous retourner à l'acceuil ?</a>
         </div>
         <footer>
