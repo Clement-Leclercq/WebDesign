@@ -31,8 +31,7 @@ new Destination ("Vietnam","Hanoï","1449€","Autorisés","Inclu","22/01/2022",
 new Destination ("Chypre","Nicosie","1506€","Non Autorisés","Non Inclu","06/12/2021","17/12/2021") ,
 new Destination ("Chine","Pékin","1863€","Non Autorisés","Inclu","02/11/2020","10/11/2020")]
 
-          // A faire : un template sur le html pour montrer au JS ou il faudra remmplir les données, aller voir sur MDN firefox la balise template ou encore su W3school
-
+        
 
 // dans une balise template le navigateur reconnait un "content" C'est pour cela que 
 // On vérifie si le navigateur prend en charge

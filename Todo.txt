@@ -1,0 +1,3 @@
+Regarded pourquoi le template ne marche pas 
+Faire en sorte que les informations rentrées dans la partie réservation soient remises dans la partie récap, 
+Faire en sorte que lorsque l'on clique sur une image les infos du voyage sont envoyé sur la page récap 
