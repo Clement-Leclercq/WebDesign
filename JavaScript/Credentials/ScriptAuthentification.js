@@ -2,8 +2,8 @@
 window.onload = function(){
     var form1 = document.getElementById("formConn");
     var form2 = document.getElementById("formInsc");
-    form1.onsubmit = verifAuth();
-    form2.onsubmit = verifInsc();
+    form1.onsubmit = verifAuth;
+    form2.onsubmit = verifInsc;
     verifConn();
 };
 function verifConn(){ // s'occupe de vérifier si l'utilisateur est co et transforme l'affichage
