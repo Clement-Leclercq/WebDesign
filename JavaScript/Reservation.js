@@ -47,7 +47,33 @@ function recap(){
     var prix = localStorage.getElement("Prix");
     
 
-return 
+    return `
+        <fieldset>
+            <legend>Informations</legend>
+                <label for="prenom">Prénom*: </label> <p>`+prenom+`</p>
+                <label for="nom">Nom*: </label> <p>`+nom+`</p> 
+                <label for="mail">Mail*: </label> <p>`+mail+`</p>
+                <label for="telephone">Téléphone: </label> <p>`+telephone+`</p>
+        </fieldset>
+        <fieldset>
+            <legend>Durée</legend>
+            <label for="dated">Date départ*: </label> <p>`+datedepart+`</p>
+            <label for="dater">Date retour*: </label> <p>`+dateretour+`</p>
+        </fieldset>
+        <fieldset>
+            <legend>Nombre</legend>
+            <label for="nbradulte">Nombre d'adulte*: </label><p>`+nbradulte+`</p>
+            <label for="nbrenfant">Nombre d'enfant*: </label><p>`+nbrenfant+`</p>
+            <label for="ptitdejoui">Petit-déjeuner ?: </label>
+            <p>`+dejoui+`</p>
+            <p>`+dejnon+`</p>
+        </fieldset>
+            
+        <fieldset>
+            <label for="prix">Prix : </label><p>`+prix+`</p>
+
+
+`
 
 
 
