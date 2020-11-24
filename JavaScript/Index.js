@@ -1,3 +1,7 @@
+// Code de la search bar et du loading d'image sur l'index
+
+
+
 const tripList = document.getElementById('tripList');
 const searchBar = document.getElementById('searchBar');
 let websiteTrips = [];
