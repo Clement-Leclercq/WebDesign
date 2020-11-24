@@ -1,6 +1,5 @@
 // Authentification avec disparition du formulaire
 window.onload = function(){
-
     var form1 = document.getElementById("formConn");
     var form2 = document.getElementById("formInsc");
     form1.onsubmit = verifAuth();
