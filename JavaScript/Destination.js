@@ -17,6 +17,7 @@ class Destination {
     }
   }
 
+//On pourrait faire une fonction pour append cette liste
 
 var Destinations = [new Destination ("Tunisie","Djerba","1406€","Autorisés","Inclu","02/11/2021","10/11/2021") ,
 new Destination ("Madagascar","Tananarive","1899€","Non Autorisés","Non inclu","10/12/2020","17/12/2020") , 
@@ -31,10 +32,3 @@ new Destination ("Vietnam","Hanoï","1449€","Autorisés","Inclu","22/01/2022",
 new Destination ("Chypre","Nicosie","1506€","Non Autorisés","Non Inclu","06/12/2021","17/12/2021") ,
 new Destination ("Chine","Pékin","1863€","Non Autorisés","Inclu","02/11/2020","10/11/2020")]
 
-        
-
-// dans une balise template le navigateur reconnait un "content" C'est pour cela que 
-// On vérifie si le navigateur prend en charge
-// l'élément HTML template en vérifiant la présence
-// de l'attribut content pour l'élément template. if ("content" in document.createElement("template")) {
-          

@@ -13,8 +13,7 @@ function reserv(){
     var dateretour = document.getElementById("dater").value;
     var nbradulte = document.getElementById("nbradulte").value;
     var nbrenfant = document.getElementById("nbrenfant").value;
-    var dejoui = document.getElementById("ptitdejoui").value;
-    var dejnon = document.getElementById("ptitdejnon").value;
+    var ptitdej = document.forms.booking.ptitdej.value;
     var renseignement = document.getElementById("renseignement");
     var prix = document.getElementById("prix")
 
@@ -26,8 +25,7 @@ function reserv(){
     localStorage.setItem('Date retour',dateretour);
     localStorage.setItem('Nombre adulte',nbradulte);
     localStorage.setItem('Nombre enfant',nbrenfant);
-    localStorage.setItem('Petit dejeuner oui',dejoui);
-    localStorage.setItem('Petit dejeuner non',dejnon);
+    localStorage.setItem('Petit dejeuner oui',ptitdej);
     localStorage.setItem('Renseignement',renseignement);
     localStorage.setItem('Prix',prix);
 };
@@ -41,8 +39,7 @@ function recap(){
     var dateretour = localStorage.getElement("Date retour");
     var nbradulte = localStorage.getElement("Nombre adulte");
     var nbrenfant = localStorage.getElement("Nombre enfant");
-    var dejoui = localStorage.getElement("Petit dejeuner oui");
-    var dejnon = localStorage.getElement("Petit dejeuner non");
+    var ptitdej = localStorage.getElement("Petit dejeuner oui");
     var renseignement = localStorage.getElement("Renseignement");
     var prix = localStorage.getElement("Prix");
     
@@ -50,35 +47,40 @@ function recap(){
     return `
         <fieldset>
             <legend>Informations</legend>
-                <label for="prenom">Prénom*: </label> <p>`+prenom+`</p>
-                <label for="nom">Nom*: </label> <p>`+nom+`</p> 
-                <label for="mail">Mail*: </label> <p>`+mail+`</p>
-                <label for="telephone">Téléphone: </label> <p>`+telephone+`</p>
+                <label for="prenom">Prénom*: </label> <p id="prenom" name="prenom">`+prenom+`</p>
+                <label for="nom">Nom*: </label> <p id="nom" name="nom">`+nom+`</p> 
+                <label for="mail">Mail*: </label> <p id="mail" name="mail">`+mail+`</p>
+                <label for="telephone">Téléphone: </label> <p id="telephone" name="telephone">`+telephone+`</p>
         </fieldset>
         <fieldset>
             <legend>Durée</legend>
-            <label for="dated">Date départ*: </label> <p>`+datedepart+`</p>
-            <label for="dater">Date retour*: </label> <p>`+dateretour+`</p>
+            <label for="dated">Date départ*: </label> <p id="dated" name="dated">`+datedepart+`</p>
+            <label for="dater">Date retour*: </label> <p id="dater" name="dater">`+dateretour+`</p>
         </fieldset>
         <fieldset>
             <legend>Nombre</legend>
-            <label for="nbradulte">Nombre d'adulte*: </label><p>`+nbradulte+`</p>
-            <label for="nbrenfant">Nombre d'enfant*: </label><p>`+nbrenfant+`</p>
-            <label for="ptitdejoui">Petit-déjeuner ?: </label>
-            <p>`+dejoui+`</p>
-            <p>`+dejnon+`</p>
+            <label for="nbradulte">Nombre d'adulte*: </label><p id="nbradulte" name="nbradulte">`+nbradulte+`</p>
+            <label for="nbrenfant">Nombre d'enfant*: </label><p id="nbrenfant" name="nbrenfant">`+nbrenfant+`</p>
+            <label for="ptitdej">Petit-déjeuner ?: </label>
+            <p id="ptitdej" name="ptitdej">`+ptitdej+`</p>
+            
         </fieldset>
             
         <fieldset>
-            <label for="prix">Prix : </label><p>`+prix+`</p>
+            <label for="prix">Prix : </label><p id="prix" name="prix">`+prix+`</p>
+
+        </fieldset>
+        <fieldset>
+            <label for="renseignement">Renseignement :</label><p id="renseignement" name="renseignement">`+renseignement`+</p>
+        <fieldset>
 
 
 `
 
-
-
-
 }
+
+// A faire : mettre le script dans les pages html et appellé les fonctions dans le dit script
+
 
 
 
