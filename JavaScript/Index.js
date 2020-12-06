@@ -3,120 +3,120 @@
 let trips = [
     {
         index :1,
-        name: 'Voyage :'+dTunisie._pays+' à :'+dTunisier._ville,
-        tag: dTunisie._ville ,
-        fuseau : dTunisie._ville,
-        continent : 'Europe',
-        prix: 150,
+        name: 'Voyage à Djerba',
+        tag: 'Djerba' ,
+        fuseau : 'Djerba',
+        pays : 'Tunisie',
+        prix: 1406,
         
     },
   
     {
         index :2,
-        name: 'Voyage à Istanbul',
-        tag: 'Istanbul' ,
-        fuseau :'Istanbul',
-        continent : 'Asia',
-        prix: 600,
+        name: 'Voyage à Tananarive',
+        tag: 'Tananarive' ,
+        fuseau :'Tananarive',
+        pays : 'Madagascar',
+        prix: 1899,
         
     },
   
     {
         index :3,
-        name: 'Voyage à Carcassonne',
-        tag: 'Carcassonne' ,
-        fuseau : 'Paris',
-        continent : 'Europe',
-        prix: 350,
+        name: 'Voyage à Ottawa',
+        tag: 'Ottawa' ,
+        fuseau : 'Ottawa',
+        pays : 'Canada',
+        prix: 1599,
         
     },
     {
         index :4,
-        name: 'Voyage en Allemagne',
-        tag: 'Allemagne' ,
-        fuseau : 'Berlin',
-        continent : 'Europe',
-        prix: 400,
+        name: 'Voyage à Tokyo',
+        tag: 'Tokyo' ,
+        fuseau : 'Tokyo',
+        pays : 'Japon',
+        prix: 2548,
         
     },
   
     {
         index :5,
-        name: 'Voyage en Australie',
-        tag: 'Australie' ,
-        fuseau : 'Sydney',
-        continent : 'Australia',
-        prix: 1300,
+        name: 'Voyage à Cancun',
+        tag: 'Cancun' ,
+        fuseau : 'Cancun',
+        pays : 'Mexique',
+        prix: 945,
         
     },
   
     {
         index :6,
-        name: 'Voyage à Barcelone',
-        tag: 'Barcelone' ,
-        fuseau : 'Madrid',
-        continent : 'Europe',
-        prix: 500,
+        name: 'Voyage à Basse-Terre',
+        tag: 'Basse-Terre' ,
+        fuseau : 'Basse-Terre',
+        pays : 'Guadeloupe',
+        prix: 1708,
         
     },
   
     {
         index :7,
-        name: 'Voyage en Crète',
-        tag: 'Crète' ,
-        fuseau : 'Athens',
-        continent : 'Europe',
-        prix: 800,
+        name: 'Voyage en Praia',
+        tag: 'Praia' ,
+        fuseau : 'Praia',
+        pays : 'Cap Vert',
+        prix: 1377,
         
     },
   
     {
         index :8,
-        name: 'Voyage au Japon',
-        tag: 'Japon' ,
-        fuseau : 'Tokyo',
-        continent : 'Asia',
-        prix: 1300,
+        name: 'Voyage à Bangkok',
+        tag: 'Bangkok' ,
+        fuseau : 'Bangkok',
+        pays : 'Thaïlande',
+        prix: 1906,
         
     },
   
     {
         index :9,
-        name: 'Voyage à New York',
-        tag: 'New_York' ,
-        fuseau : 'New_York',
-        continent : 'America',
-        prix: 1200,
+        name: 'Voyage à Jakarta ',
+        tag: 'Jakarta' ,
+        fuseau : 'Jakarta',
+        pays : 'Indonésie',
+        prix: 1299,
         
     },
   
     {
         index :10,
-        name: 'Voyage au Japon',
-        tag: 'Japon' ,
-        fuseau : 'Tokyo',
-        continent : 'Asia',
-        prix: 1300,
+        name: 'Voyage en Hanoï',
+        tag: 'Hanoï' ,
+        fuseau : 'Hanoï',
+        pays : 'Vietnam',
+        prix: 1449,
         
     },
   
     {
         index :11,
-        name: 'Voyage au Japon',
-        tag: 'Japon' ,
-        fuseau : 'Tokyo',
-        continent : 'Asia',
-        prix: 1300,
+        name: 'Voyage en Nicosie',
+        tag: 'Nicosie' ,
+        fuseau : 'Nicosie',
+        pays : 'Chypre',
+        prix: 1506,
         
     },
   
     {
         index :12,
-        name: 'Voyage au Japon',
-        tag: 'Japon' ,
-        fuseau : 'Tokyo',
-        continent : 'Asia',
-        prix: 1300,
+        name: 'Voyage à Pekin',
+        tag: 'Pekin' ,
+        fuseau : 'Pekin',
+        pays : 'Chine',
+        prix: 1863,
         
     },
   
@@ -153,7 +153,7 @@ const displayTrips = (trips) => {
         return `
             <li class="Emplacement">
                 <div class="ImagesDestinations">            
-                <img src="../images/"${Destination.getImage}".jpg" alt="${Emplacement.tag}" class="image" style="width:100%">
+                <img src="../images/${Emplacement.tag}.jpg" alt="${Emplacement.tag}" class="image" style="width:100%">
                 <div class="Overlay">
                 <div class="InfoDestination">${Emplacement.tag.replace("_"," ")} | <span id="zone_heure${Emplacement.index}"></span> | <span id="zone_meteo${Emplacement.index}"></span> </div>${Emplacement.prix}€
                 </div>
