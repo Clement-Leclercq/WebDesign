@@ -148,9 +148,8 @@ const loadTrips = async () => {
 };
 // LE LOADING NE MARCHE PAS 
 const displayTrips = (trips) => {
-    const htmlString = trips
-        .map((Emplacement) => {
-            return `
+    const htmlString = trips.map((Emplacement) => {
+        return `
             <li class="Emplacement">
                 <div class="ImagesDestinations">            
                 <img class = imfit src="../images/${Emplacement.tag}.jpg" alt="${Emplacement.tag}" class="image" style="width:100%">
@@ -164,7 +163,7 @@ const displayTrips = (trips) => {
         `;
         })
         .join('');
-    tripList.innerHTML = htmlString;
+         tripList.innerHTML = htmlString;
 };
 
 loadTrips();
