@@ -125,11 +125,11 @@ let trips = [
 // Code de la search bar et du loading d'image sur l'index
 
 
-
+//Selectionne les balises
 const tripList = document.getElementById('tripList');
 const searchBar = document.getElementById('searchBar');
 
-
+//Filtre par nom de ville
 searchBar.addEventListener('keyup', (e) => {
     const searchString = e.target.value.toLowerCase();
 
@@ -141,12 +141,12 @@ searchBar.addEventListener('keyup', (e) => {
     displayTrips(filteredTrips);
 });
 
-
+//Fonction qui montre les voyages de maniere effective
 const loadTrips = async () => {
     displayTrips(trips);
 
 };
-// LE LOADING NE MARCHE PAS 
+//Fonction core qui va permettre l'affichage en mettant du string HTML
 const displayTrips = (trips) => {
     const htmlString = trips.map((Emplacement) => {
         return `
