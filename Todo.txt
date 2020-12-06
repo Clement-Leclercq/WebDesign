@@ -7,3 +7,6 @@ sans être accompagnés d’un adulte. Toute modification dans le formulaire con
 
 
 Mettre un fond blanc sur la plupart des fenetres du site
+
+Faire en sorte que dans le innerHTML de mon site quand je reserve ca aille dans le local storage pour le mettre dans la page réservation
+
