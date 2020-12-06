@@ -134,9 +134,9 @@ const searchBar = document.getElementById('searchBar');
 searchBar.addEventListener('keyup', (e) => {
     const searchString = e.target.value.toLowerCase();
 
-    const filteredTrips =trips.filter((Holder) => {
+    const filteredTrips =trips.filter((Emplacement) => {
         return (
-            Holder.tag.toLowerCase().includes(searchString) 
+            Emplacement.tag.toLowerCase().includes(searchString) 
         );
     });
     displayTrips(filteredTrips);
@@ -153,7 +153,7 @@ const displayTrips = (trips) => {
         return `
             <li class="Emplacement">
                 <div class="ImagesDestinations">            
-                <img src="../images/${Emplacement.tag}.jpg" alt="${Emplacement.tag}" class="image" style="width:100%">
+                <img src="../images/${Emplacement.pays}.jpg" alt="${Emplacement.tag}" class="image" style="width:100%">
                 <div class="Overlay">
                 <div class="InfoDestination">${Emplacement.tag.replace("_"," ")} | <span id="zone_heure${Emplacement.index}"></span> | <span id="zone_meteo${Emplacement.index}"></span> </div>${Emplacement.prix}€
                 </div>
