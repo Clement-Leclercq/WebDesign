@@ -1,6 +1,6 @@
 //Liste de destination :
 
-let Destinations = [
+let trips = [
     {
         index :1,
         name: 'Voyage :'+dTunisie._pays+' à :'+dTunisier._ville,
@@ -129,12 +129,12 @@ let Destinations = [
 
 const tripList = document.getElementById('tripList');
 const searchBar = document.getElementById('searchBar');
-let websiteTrips = [];
+
 
 searchBar.addEventListener('keyup', (e) => {
     const searchString = e.target.value.toLowerCase();
 
-    const filteredTrips = websiteTrips.filter((Destination) => {
+    const filteredTrips =trips.filter((Destination) => {
         return (
             Destination._pays.toLowerCase().includes(searchString) ||
             Destination._ville.toLowerCase().includes(searchString)
@@ -145,13 +145,12 @@ searchBar.addEventListener('keyup', (e) => {
 
 
 const loadTrips = async () => {
-    displayTrips(Destinations);
-    
+    displayTrips(trips);
+
 };
 // LE LOADING NE MARCHE PAS 
 const displayTrips = (trips) => {
-    const htmlString = trips
-        .map((Destination) => {
+    const htmlString = trips.map((Destination) => {
             return `
             <li class="Destination">
                 <p>${Destination.afficher}</p>
