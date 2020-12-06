@@ -1,39 +1,5 @@
-Regarded pourquoi le template ne marche pas 
-Faire en sorte que les informations rentrées dans la partie réservation soient remises dans la partie récap, 
-Faire en sorte que lorsque l'on clique sur une image les infos du voyage sont envoyé sur la page récap
-
-Un template qu eje laisse la
-
-
-if ("content" in document.createElement("template")) {
-
-        
-    for (let i = 0; i < length(Destinations)+1; i++) {
-        var template =document.querySelector("#tableIm")
-
-        
-        var box = document.querySelector("box");
-        var clone = document.importNode(template.content, true);
-        var p = clone.querySelectorAll("p");
-        var img = clone.querySelectorAll("img)") ;
-        img.src = Destinations[0+i].getImage() ;
-        img.alt = Destinations[0+i]._ville ;
-        p.textContent = Destinations[0+i].afficher() ;
-        
-
-        box.appendChild(clone);
-
-        i=+1
-    }
-}
-
-    else {
-        alert("Votre navigateur n'est pas compatible avec ce site internet, merci d'essayer des navigateurs plus récents")
-}
-
-
-//En s'aidant du mdn template premiere ligne de l'exmple du tableau
-//Faire une boucle for pour les 12 voyages qui créent des clones qui avec querySelector
-//Selectionne par défaut des balise pour les remplir (voir comment remplir l'intérieur)
-//Append les clones a chaque fois
- 
+5. Le prix est calculé automatiquement en fonction de la durée du séjour, du nombre d’adultes, du
+nombres d’enfants et du petit déjeuner ; un enfant paie 40% du prix d’un adulte, quel que soit le séjour
+choisi. Un petit déjeuner ajoute un supplément de 12€ par personne et par jour. Evidemment, la date
+de retour doit obligatoirement être postérieure à la date de départ. Les enfants ne peuvent voyager
+sans être accompagnés d’un adulte. Toute modification dans le formulaire conduit à un recalcul du prix.
