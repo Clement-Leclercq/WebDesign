@@ -8,7 +8,7 @@ let trips = [
         fuseau : 'Djerba',
         pays : 'Tunisie',
         prix: 1406,
-        
+        image : '../images/Tunisie.jpg'
     },
   
     {
@@ -152,7 +152,7 @@ const displayTrips = (trips) => {
         return `
             <li class="Emplacement">
                 <div class="ImagesDestinations">            
-                <img class = imfit src="../images/${Emplacement.tag}.jpg" alt="${Emplacement.tag}" class="image" style="width:100%">
+                <img class = imfit src='../images/${Emplacement.image}.jpg' alt="${Emplacement.tag}" style="width:100%">
                 <div class="Overlay">
                 <div class="InfoDestination">${Emplacement.tag.replace("_"," ")} | <span id="zone_heure${Emplacement.index}"></span> | <span id="zone_meteo${Emplacement.index}"></span> </div>${Emplacement.prix}€
                 </div>
@@ -163,9 +163,59 @@ const displayTrips = (trips) => {
         `;
         })
         .join('');
-         tripList.innerHTML = htmlString;
+        tripList.innerHTML = htmlString;
 };
 
 loadTrips();
 
+//Le filtre par prix
+function openCloseFilter(){
+    var divContenu = document.getElementById('hideContentFiltre')
+         
+    if(divContenu.style.display == 'block')
+        divContenu.style.display = 'none';
+    else
+        divContenu.style.display = 'block';
+}
+
+var curseurMin = document.getElementById('rangeMin')
+var valueMin = document.getElementById('valuePrixMin')
+curseurMin.value = 0
+valueMin.innerHTML = curseurMin.value
+
+var curseurMax = document.getElementById('rangeMax')
+var valueMax = document.getElementById('valuePrixMax')
+curseurMax.value = 2000
+valueMax.innerHTML = curseurMax.value
+
+curseurMin.oninput = function(){
+    valueMin.innerHTML = this.value;
+}
+
+curseurMax.oninput = function(){
+    valueMax.innerHTML = this.value;
+}
+
+curseurMin.addEventListener('mousemove', function() {
+    
+    const filteredDestination = produits.filter((Emplacement) => {
+        for (let i=0; i < produits.length; i++) { 
+        if(Emplacement.prix > curseurMin.value && Emplacement.prix < curseurMax.value){
+            return ( Emplacement.tag.toLowerCase()
+            );}
+        }
+    });
+    displayDestinations(filteredDestination);
+});
+curseurMax.addEventListener('mousemove', function() {
+    
+    const filteredDestination = produits.filter((Emplacement) => {
+        for (let i=0; i < produits.length; i++) {
+            if(Emplacement.prix > curseurMin.value && Emplacement.prix < curseurMax.value){
+                return ( Emplacement.tag.toLowerCase()
+                );}
+        }
+    });
+    displayDestinations(filteredDestination);  
+});
 
