@@ -148,11 +148,12 @@ const loadTrips = async () => {
 };
 // LE LOADING NE MARCHE PAS 
 const displayTrips = (trips) => {
-    const htmlString = trips.map((Emplacement) => {
-        return `
+    const htmlString = trips
+        .map((Emplacement) => {
+            return `
             <li class="Emplacement">
                 <div class="ImagesDestinations">            
-                <img src="../images/${Emplacement.pays}.jpg" alt="${Emplacement.tag}" class="image" style="width:100%">
+                <img src="../images/${Emplacement.tag}.jpg" alt="${Emplacement.tag}" class="image" style="width:100%">
                 <div class="Overlay">
                 <div class="InfoDestination">${Emplacement.tag.replace("_"," ")} | <span id="zone_heure${Emplacement.index}"></span> | <span id="zone_meteo${Emplacement.index}"></span> </div>${Emplacement.prix}€
                 </div>
@@ -163,7 +164,7 @@ const displayTrips = (trips) => {
         `;
         })
         .join('');
-        tripList.innerHTML = htmlString;
+    tripList.innerHTML = htmlString;
 };
 
 loadTrips();
