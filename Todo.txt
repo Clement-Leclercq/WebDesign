@@ -3,3 +3,7 @@ nombres d’enfants et du petit déjeuner ; un enfant paie 40% du prix d’un ad
 choisi. Un petit déjeuner ajoute un supplément de 12€ par personne et par jour. Evidemment, la date
 de retour doit obligatoirement être postérieure à la date de départ. Les enfants ne peuvent voyager
 sans être accompagnés d’un adulte. Toute modification dans le formulaire conduit à un recalcul du prix.
+
+
+
+Mettre un fond blanc sur la plupart des fenetres du site
