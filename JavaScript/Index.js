@@ -148,7 +148,7 @@ const loadTrips = async () => {
 };
 // LE LOADING NE MARCHE PAS 
 const displayTrips = (trips) => {
-    const htmlString = produits.map((Emplacement) => {
+    const htmlString = trips.map((Emplacement) => {
         return `
             <li class="Emplacement">
                 <div class="ImagesDestinations">            
