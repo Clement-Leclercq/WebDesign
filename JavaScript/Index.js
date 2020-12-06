@@ -121,8 +121,7 @@ let trips = [
     },
   
   
-  ];
-
+];
 // Code de la search bar et du loading d'image sur l'index
 
 
@@ -164,7 +163,7 @@ const displayTrips = (trips) => {
         `;
         })
         .join('');
-    tripList.innerHTML = htmlString;
+        tripList.innerHTML = htmlString;
 };
 
 loadTrips();
