@@ -134,10 +134,9 @@ const searchBar = document.getElementById('searchBar');
 searchBar.addEventListener('keyup', (e) => {
     const searchString = e.target.value.toLowerCase();
 
-    const filteredTrips =trips.filter((Destination) => {
+    const filteredTrips =trips.filter((Holder) => {
         return (
-            Destination._pays.toLowerCase().includes(searchString) ||
-            Destination._ville.toLowerCase().includes(searchString)
+            Holder.tag.toLowerCase().includes(searchString) 
         );
     });
     displayTrips(filteredTrips);
@@ -150,12 +149,17 @@ const loadTrips = async () => {
 };
 // LE LOADING NE MARCHE PAS 
 const displayTrips = (trips) => {
-    const htmlString = trips.map((Destination) => {
-            return `
-            <li class="Destination">
-                <p>${Destination.afficher}</p>
-                
-                <img src="${Destination.getImage}"></img>
+    const htmlString = produits.map((Emplacement) => {
+        return `
+            <li class="Emplacement">
+                <div class="ImagesDestinations">            
+                <img src="../images/"${Destination.getImage}".jpg" alt="${Emplacement.tag}" class="image" style="width:100%">
+                <div class="Overlay">
+                <div class="InfoDestination">${Emplacement.tag.replace("_"," ")} | <span id="zone_heure${Emplacement.index}"></span> | <span id="zone_meteo${Emplacement.index}"></span> </div>${Emplacement.prix}€
+                </div>
+                <a class="add-panier" id="panier" href="#">Ajouter au panier</a>
+                <a  id = "reserver" href="reservation.html?id=${Emplacement.index}">Réserver</a>
+                </div>
             </li>
         `;
         })
