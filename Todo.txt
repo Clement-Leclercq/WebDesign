@@ -1,12 +1,2 @@
-5. Le prix est calculé automatiquement en fonction de la durée du séjour, du nombre d’adultes, du
-nombres d’enfants et du petit déjeuner ; un enfant paie 40% du prix d’un adulte, quel que soit le séjour
-choisi. Un petit déjeuner ajoute un supplément de 12€ par personne et par jour. Evidemment, la date
-de retour doit obligatoirement être postérieure à la date de départ. Les enfants ne peuvent voyager
-sans être accompagnés d’un adulte. Toute modification dans le formulaire conduit à un recalcul du prix.
-
-
-
-Mettre un fond blanc sur la plupart des fenetres du site
-
-Faire en sorte que dans le innerHTML de mon site quand je reserve ca aille dans le local storage pour le mettre dans la page réservation
-Le filtre par prix ne marche pas
+Problèmes date temperature
+Problèmes local storage pour le click de voyage et la reservation

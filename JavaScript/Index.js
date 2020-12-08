@@ -126,6 +126,7 @@ let trips = [
 // Code de la search bar et du loading d'image sur l'index
 
 
+
 //Selectionne les balises
 const tripList = document.getElementById('tripList');
 const searchBar = document.getElementById('searchBar');
@@ -158,7 +159,7 @@ const displayTrips = (trips) => {
                 <div class="overlay">
                 <div class="text">
                 ${Emplacement.tag.replace("_"," ")} | <span id="zone_heure${Emplacement.index}"></span> | <span id="zone_meteo${Emplacement.index}"></span> ${Emplacement.prix}€
-                <a  id = "reserver" href="reservation.html" id=${Emplacement.index}" onclick=localStorage.setItem('Pays',${Emplacement.name},localStorage.setItem('Prix',${Emplacement.prix}))>Réserver</a>
+                <a  id = "reserver" href="reservation.html" id=${Emplacement.index}" onclick=tripInfoInLocalStorage()>Réserver</a>
                 </div>
             </div>
         `;
@@ -220,3 +221,9 @@ curseurMax.addEventListener('mousemove', function() {
     displayTrips(filteredTrips);  
 });
 
+function tripInfoInLocalStorage(){
+    
+localStorage.setItem('Pays',Emplacement.name)
+localStorage.setItem('Prix',Emplacement.prix)
+
+}
