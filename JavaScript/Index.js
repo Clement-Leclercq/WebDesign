@@ -124,8 +124,13 @@ let trips = [
   
 ];
 // Code de la search bar et du loading d'image sur l'index
+//Fonction qui prend les informations sur le voyage
+function tripInfoInLocalStorage(){
+    
+    localStorage.setItem('Pays',Emplacement.name)
+    localStorage.setItem('Prix',Emplacement.prix)
 
-
+}
 
 //Selectionne les balises
 const tripList = document.getElementById('tripList');
@@ -159,7 +164,7 @@ const displayTrips = (trips) => {
                 <div class="overlay">
                 <div class="text">
                 ${Emplacement.tag.replace("_"," ")} | <span id="zone_heure${Emplacement.index}"></span> | <span id="zone_meteo${Emplacement.index}"></span> ${Emplacement.prix}€
-                <a  id = "reserver" href="reservation.html" id=${Emplacement.index}" onclick=tripInfoInLocalStorage()>Réserver</a>
+                <a  id = "reserver" href="reservation.html" id=${Emplacement.index}" onclick="tripInfoInLocalStorage()" >Réserver</a>
                 </div>
             </div>
         `;
@@ -170,7 +175,7 @@ const displayTrips = (trips) => {
 
 loadTrips();
 
-//Le filtre par prix (S'AFFICHE MAIS NE MARCHE PAS)
+//Le filtre par prix
 function openCloseFilter(){
     var divContenu = document.getElementById('hideContentFiltre')
          
@@ -220,10 +225,3 @@ curseurMax.addEventListener('mousemove', function() {
     });
     displayTrips(filteredTrips);  
 });
-
-function tripInfoInLocalStorage(){
-    
-localStorage.setItem('Pays',Emplacement.name)
-localStorage.setItem('Prix',Emplacement.prix)
-
-}
