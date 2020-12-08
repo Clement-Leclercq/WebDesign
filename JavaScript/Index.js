@@ -71,8 +71,8 @@ let trips = [
         index :7,
         name: 'Voyage en Praia',
         tag: 'Praia' ,
-        fuseau : 'Praia',
-        pays : 'Cape_Verde',
+        fuseau : 'Cape_Verde',
+        pays : 'Cap Vert',
         continent : 'Atlantic',
         prix: 1377,
         
