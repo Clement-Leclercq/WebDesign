@@ -165,11 +165,11 @@ const displayTrips = (trips) => {
         return `
             <div class="container">
                 <div>            
-                <img class = imfit src='../images/${Emplacement.pays}.jpg' alt="${Emplacement.tag}" style="width:100%">
+                <img class = "imfit" src='../images/${Emplacement.pays}.jpg' alt="${Emplacement.tag}">
                 </div>
                 <div class="overlay">
-                <div class="text">${Emplacement.tag.replace("_"," ")} | <span id="zone_heure${Emplacement.index}"></span> | <span id="zone_meteo${Emplacement.index}"></span> ${Emplacement.prix}€
-                </div>
+                <div class="text">
+                ${Emplacement.tag.replace("_"," ")} | <span id="zone_heure${Emplacement.index}"></span> | <span id="zone_meteo${Emplacement.index}"></span> ${Emplacement.prix}€
                 <a  id = "reserver" href="reservation.html" id=${Emplacement.index}">Réserver</a>
                 </div>
             </div>
