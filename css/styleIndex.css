@@ -1,6 +1,6 @@
 header {
     margin: 10px;
-    background-color:darksalmon;
+    background-color:rgb(102, 153, 185);
     height: 150px;
     text-align: center;
 }
@@ -14,7 +14,7 @@ header {
     font-size: 17px;
 }
 .headernav a.active {
-    background-color:lightgrey;
+    background-color:rgb(194, 107, 26);
     color: white;
 }
 header img.logo{
@@ -23,7 +23,7 @@ header img.logo{
 
 footer {
     margin: 10px;
-    background-color: darkslategray ;
+    background-color: rgb(102, 153, 185) ;
     height: 150px;
     display: grid;
     justify-content: space-between;
