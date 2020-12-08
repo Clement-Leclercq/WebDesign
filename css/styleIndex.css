@@ -81,7 +81,6 @@ body {
     grid-gap: 20px;
     justify-content: space-between;
 }
-
 .panorama {
     height: 406px;
     width: 540px;
@@ -96,8 +95,8 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 406px;
-    width: 540px;
+    width: 640px;
+    height: 360px;
     opacity: 0;
     transition: .5s ease;
     background-color: #008CBA;
@@ -115,6 +114,10 @@ body {
     color: white;
     font-size: 20px;
     text-align: center;
+  }
+  .imfit{
+    width: 640px;
+    height: 360px;
   }
 #UpBtn {
     display: none;
