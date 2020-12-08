@@ -1,4 +1,6 @@
 ///Code montrant les crénaux horaires
+//Parfois le serveur worldtime api refuse de partager les données, message d'erreur : Access to fetch at 'http://worldtimeapi.org/api/timezone/America/Cancun' from origin 'http://127.0.0.1:5500' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.
+
 
 
 for (let i=0; i <= trips.length-1; i++) {

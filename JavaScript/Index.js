@@ -158,7 +158,7 @@ const displayTrips = (trips) => {
                 <div class="overlay">
                 <div class="text">
                 ${Emplacement.tag.replace("_"," ")} | <span id="zone_heure${Emplacement.index}"></span> | <span id="zone_meteo${Emplacement.index}"></span> ${Emplacement.prix}€
-                <a  id = "reserver" href="reservation.html" id=${Emplacement.index}">Réserver</a>
+                <a  id = "reserver" href="reservation.html" id=${Emplacement.index}" onclick=localStorage.setItem('Pays',${Emplacement.name},localStorage.setItem('Prix',${Emplacement.prix}))>Réserver</a>
                 </div>
             </div>
         `;
