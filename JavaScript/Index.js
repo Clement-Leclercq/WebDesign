@@ -8,7 +8,9 @@ let trips = [
         fuseau : 'Djerba',
         pays : 'Tunisie',
         prix: 1406,
+        continent : 'Africa',
         image : '../images/Tunisie.jpg'
+        
     },
   
     {
@@ -17,6 +19,7 @@ let trips = [
         tag: 'Antananarivo' ,
         fuseau :'Antananarivo',
         pays : 'Madagascar',
+        continent : 'Africa',
         prix: 1899,
         
     },
@@ -27,6 +30,7 @@ let trips = [
         tag: 'Ottawa' ,
         fuseau : 'Ottawa',
         pays : 'Canada',
+        continent : 'America',
         prix: 1599,
         
     },
@@ -36,6 +40,7 @@ let trips = [
         tag: 'Tokyo' ,
         fuseau : 'Tokyo',
         pays : 'Japon',
+        continent : 'Asia',
         prix: 2548,
         
     },
@@ -46,6 +51,7 @@ let trips = [
         tag: 'Cancun' ,
         fuseau : 'Cancun',
         pays : 'Mexique',
+        continent : 'America',
         prix: 945,
         
     },
@@ -56,6 +62,7 @@ let trips = [
         tag: 'Basse-Terre' ,
         fuseau : 'Basse-Terre',
         pays : 'Guadeloupe',
+        continent : 'America',
         prix: 1708,
         
     },
@@ -66,6 +73,7 @@ let trips = [
         tag: 'Praia' ,
         fuseau : 'Praia',
         pays : 'Cap Vert',
+        continent : 'Africa',
         prix: 1377,
         
     },
@@ -76,6 +84,7 @@ let trips = [
         tag: 'Bangkok' ,
         fuseau : 'Bangkok',
         pays : 'Thaïlande',
+        continent : 'Asia',
         prix: 1906,
         
     },
@@ -86,6 +95,7 @@ let trips = [
         tag: 'Jakarta' ,
         fuseau : 'Jakarta',
         pays : 'Indonésie',
+        continent : 'Asia',
         prix: 1299,
         
     },
@@ -96,6 +106,7 @@ let trips = [
         tag: 'Hanoï' ,
         fuseau : 'Hanoï',
         pays : 'Vietnam',
+        continent : 'Asia',
         prix: 1449,
         
     },
@@ -106,6 +117,7 @@ let trips = [
         tag: 'Nicosie' ,
         fuseau : 'Nicosie',
         pays : 'Chypre',
+        continent : 'Europe',
         prix: 1506,
         
     },
@@ -116,6 +128,7 @@ let trips = [
         tag: 'Pekin' ,
         fuseau : 'Pekin',
         pays : 'Chine',
+        continent : 'Asia',
         prix: 1863,
         
     },
