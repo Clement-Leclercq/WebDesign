@@ -77,7 +77,7 @@ body {
 }
 .box {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 640px 365px;;
     grid-gap: 20px;
     justify-content: space-between;
 }
@@ -87,7 +87,8 @@ body {
 }
 .container {
     position: relative;
-    width: 50%;
+    width: 100%;
+    margin-right: 20%;
   }
 .overlay {
     position: absolute;
@@ -95,14 +96,14 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    width: 640px;
-    height: 360px;
+    width: 97%;
+    height: 100%;
     opacity: 0;
     transition: .5s ease;
     background-color: #008CBA;
   }
   .container:hover .overlay {
-    opacity: 0.8;
+    opacity: 0.7;
   }
   .text {
     color: white;
@@ -116,8 +117,8 @@ body {
     text-align: center;
   }
   .imfit{
-    width: 640px;
-    height: 360px;
+    width: 97%;
+    height: auto;
   }
 #UpBtn {
     display: none;
@@ -147,4 +148,16 @@ body {
     width: 100%;
     height: auto;
     background-color: white;
+}
+.contactmail{
+    color: white;
+    text-align: center;
+}
+.contacttel{
+    color: white;
+    text-align: center;
+}
+.textecontact{
+    color: white;
+    text-align: center;
 }
