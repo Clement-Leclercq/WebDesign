@@ -15,7 +15,7 @@ function reserv(){
     var nbrenfant = document.getElementById("nbrenfant").value;
     var ptitdej = document.forms.booking.ptitdej.value;
     var renseignement = document.getElementById("renseignement");
-    var prix = document.getElementById("prix")
+    var prix = totalCost
 
     localStorage.setItem('Prénom',prenom);
     localStorage.setItem('Nom',nom);
