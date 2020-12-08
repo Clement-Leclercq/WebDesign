@@ -105,6 +105,12 @@ body {
   .container:hover .overlay {
     opacity: 0.8;
   }
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+  }
   div.overlay p{
     color: white;
     font-size: 20px;

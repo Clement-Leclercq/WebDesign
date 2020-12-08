@@ -150,15 +150,16 @@ const loadTrips = async () => {
 const displayTrips = (trips) => {
     const htmlString = trips.map((Emplacement) => {
         return `
-            <li class="Emplacement">
-                <div class="box">            
+            <div class="container">
+                <div>            
                 <img class = imfit src='../images/${Emplacement.pays}.jpg' alt="${Emplacement.tag}" style="width:100%">
-                <div class="Overlay">
-                <div class="InfoDestination">${Emplacement.tag.replace("_"," ")} | <span id="zone_heure${Emplacement.index}"></span> | <span id="zone_meteo${Emplacement.index}"></span> </div>${Emplacement.prix}€
+                </div>
+                <div class="overlay">
+                <div class="text">${Emplacement.tag.replace("_"," ")} | <span id="zone_heure${Emplacement.index}"></span> | <span id="zone_meteo${Emplacement.index}"></span> ${Emplacement.prix}€
                 </div>
                 <a  id = "reserver" href="reservation.html" id=${Emplacement.index}">Réserver</a>
                 </div>
-            </li>
+            </div>
         `;
         })
         .join('');
