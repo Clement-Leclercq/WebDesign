@@ -31,17 +31,17 @@ function reserv(){
 };
 
 function recap(){
-    var prenom = localStorage.getElement("Prénom");
-    var nom = localStorage.getElement("Nom");
-    var mail = localStorage.getElement("Mail");
-    var telephone = localStorage.getElement("Telephone");
-    var datedepart = localStorage.getElement("Date depart");
-    var dateretour = localStorage.getElement("Date retour");
-    var nbradulte = localStorage.getElement("Nombre adulte");
-    var nbrenfant = localStorage.getElement("Nombre enfant");
-    var ptitdej = localStorage.getElement("Petit dejeuner oui");
-    var renseignement = localStorage.getElement("Renseignement");
-    var prix = localStorage.getElement("Prix");
+    var prenom = localStorage.getItem("Prénom");
+    var nom = localStorage.getItem("Nom");
+    var mail = localStorage.getItem("Mail");
+    var telephone = localStorage.getItem("Telephone");
+    var datedepart = localStorage.getItem("Date depart");
+    var dateretour = localStorage.getItem("Date retour");
+    var nbradulte = localStorage.getItem("Nombre adulte");
+    var nbrenfant = localStorage.getItem("Nombre enfant");
+    var ptitdej = localStorage.getItem("Petit dejeuner oui");
+    var renseignement = localStorage.getItem("Renseignement");
+    var prix = localStorage.getItem("Prix");
     
 
     return `

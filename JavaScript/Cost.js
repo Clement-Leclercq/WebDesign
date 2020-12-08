@@ -1,6 +1,6 @@
 //Fonction qui calcul le coup total du voyage et le renvoi dans la page réservation
 
-//Déclaration des variables et vérification du format de la date
+//Déclaration des variables et vérification du format de la date+calcul du cout
 
 let totalCost = document.getElementById("prix");
 let tripCost = localStorage.getItem('coutTotal');
