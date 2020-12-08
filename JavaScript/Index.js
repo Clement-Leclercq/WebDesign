@@ -168,7 +168,7 @@ const displayTrips = (trips) => {
 
 loadTrips();
 
-//Le filtre par prix
+//Le filtre par prix (S'AFFICHE MAIS NE MARCHE PAS)
 function openCloseFilter(){
     var divContenu = document.getElementById('hideContentFiltre')
          
@@ -198,24 +198,24 @@ curseurMax.oninput = function(){
 
 curseurMin.addEventListener('mousemove', function() {
     
-    const filteredDestination = produits.filter((Emplacement) => {
+    const filteredTrips = produits.filter((Emplacement) => {
         for (let i=0; i < produits.length; i++) { 
         if(Emplacement.prix > curseurMin.value && Emplacement.prix < curseurMax.value){
             return ( Emplacement.tag.toLowerCase()
             );}
         }
     });
-    displayDestinations(filteredDestination);
+    displayTrips(filteredTrips);
 });
 curseurMax.addEventListener('mousemove', function() {
     
-    const filteredDestination = produits.filter((Emplacement) => {
-        for (let i=0; i < produits.length; i++) {
+    const filteredTrips = trips.filter((Emplacement) => {
+        for (let i=0; i < trips.length; i++) {
             if(Emplacement.prix > curseurMin.value && Emplacement.prix < curseurMax.value){
                 return ( Emplacement.tag.toLowerCase()
                 );}
         }
     });
-    displayDestinations(filteredDestination);  
+    displayTrips(filteredTrips);  
 });
 
