@@ -5,18 +5,21 @@ let trips = [
         index :1,
         name: 'Voyage à Djerba',
         tag: 'Djerba' ,
-        fuseau : 'Djerba',
+        fuseau : 'Tunis',
         pays : 'Tunisie',
         prix: 1406,
+        continent : 'Africa',
         image : '../images/Tunisie.jpg'
+        
     },
   
     {
         index :2,
         name: 'Voyage à Tananarive',
-        tag: 'Tananarive' ,
-        fuseau :'Tananarive',
+        tag: 'Antananarivo' ,
+        fuseau :'Antananarivo',
         pays : 'Madagascar',
+        continent : 'Indian',
         prix: 1899,
         
     },
@@ -25,8 +28,9 @@ let trips = [
         index :3,
         name: 'Voyage à Ottawa',
         tag: 'Ottawa' ,
-        fuseau : 'Ottawa',
+        fuseau : 'Toronto',
         pays : 'Canada',
+        continent : 'America',
         prix: 1599,
         
     },
@@ -36,6 +40,7 @@ let trips = [
         tag: 'Tokyo' ,
         fuseau : 'Tokyo',
         pays : 'Japon',
+        continent : 'Asia',
         prix: 2548,
         
     },
@@ -46,6 +51,7 @@ let trips = [
         tag: 'Cancun' ,
         fuseau : 'Cancun',
         pays : 'Mexique',
+        continent : 'America',
         prix: 945,
         
     },
@@ -54,8 +60,9 @@ let trips = [
         index :6,
         name: 'Voyage à Basse-Terre',
         tag: 'Basse-Terre' ,
-        fuseau : 'Basse-Terre',
+        fuseau : 'Guadeloupe',
         pays : 'Guadeloupe',
+        continent : 'America',
         prix: 1708,
         
     },
@@ -65,7 +72,8 @@ let trips = [
         name: 'Voyage en Praia',
         tag: 'Praia' ,
         fuseau : 'Praia',
-        pays : 'Cap Vert',
+        pays : 'Cape_Verde',
+        continent : 'Atlantic',
         prix: 1377,
         
     },
@@ -76,6 +84,7 @@ let trips = [
         tag: 'Bangkok' ,
         fuseau : 'Bangkok',
         pays : 'Thaïlande',
+        continent : 'Asia',
         prix: 1906,
         
     },
@@ -86,6 +95,7 @@ let trips = [
         tag: 'Jakarta' ,
         fuseau : 'Jakarta',
         pays : 'Indonésie',
+        continent : 'Asia',
         prix: 1299,
         
     },
@@ -94,8 +104,9 @@ let trips = [
         index :10,
         name: 'Voyage en Hanoï',
         tag: 'Hanoï' ,
-        fuseau : 'Hanoï',
+        fuseau : 'Ho_Chi_Minh',
         pays : 'Vietnam',
+        continent : 'Asia',
         prix: 1449,
         
     },
@@ -104,8 +115,9 @@ let trips = [
         index :11,
         name: 'Voyage en Nicosie',
         tag: 'Nicosie' ,
-        fuseau : 'Nicosie',
+        fuseau : 'Nicosia',
         pays : 'Chypre',
+        continent : 'Asia',
         prix: 1506,
         
     },
@@ -114,8 +126,9 @@ let trips = [
         index :12,
         name: 'Voyage à Pekin',
         tag: 'Pekin' ,
-        fuseau : 'Pekin',
+        fuseau : 'Shanghai',
         pays : 'Chine',
+        continent : 'Asia',
         prix: 1863,
         
     },

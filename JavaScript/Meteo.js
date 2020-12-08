@@ -14,3 +14,4 @@ for (let i=0; i <= trips.length-1; i++) {
     
     })
     }
+
