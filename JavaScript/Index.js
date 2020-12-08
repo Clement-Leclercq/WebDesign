@@ -14,8 +14,8 @@ let trips = [
     {
         index :2,
         name: 'Voyage à Tananarive',
-        tag: 'Tananarive' ,
-        fuseau :'Tananarive',
+        tag: 'Antananarivo' ,
+        fuseau :'Antananarivo',
         pays : 'Madagascar',
         prix: 1899,
         
