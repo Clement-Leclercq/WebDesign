@@ -151,12 +151,11 @@ const displayTrips = (trips) => {
     const htmlString = trips.map((Emplacement) => {
         return `
             <li class="Emplacement">
-                <div class="ImagesDestinations">            
+                <div class="box">            
                 <img class = imfit src='../images/${Emplacement.pays}.jpg' alt="${Emplacement.tag}" style="width:100%">
                 <div class="Overlay">
                 <div class="InfoDestination">${Emplacement.tag.replace("_"," ")} | <span id="zone_heure${Emplacement.index}"></span> | <span id="zone_meteo${Emplacement.index}"></span> </div>${Emplacement.prix}€
                 </div>
-                <a class="add-panier" id="panier" href="#">Ajouter au panier</a>
                 <a  id = "reserver" href="reservation.html" id=${Emplacement.index}">Réserver</a>
                 </div>
             </li>
