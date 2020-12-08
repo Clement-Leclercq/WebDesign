@@ -73,34 +73,10 @@ function recap(){
         <fieldset>
             <label for="renseignement">Renseignement :</label><p id="renseignement" name="renseignement">`+renseignement`+</p>
         <fieldset>
-
-
-`
-
+    `
 }
 
 // A faire : mettre le script dans les pages html et appellé les fonctions dans le dit script
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
