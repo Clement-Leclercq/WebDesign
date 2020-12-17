@@ -1,2 +1,0 @@
-Problèmes date temperature
-Problèmes local storage pour le click de voyage et la reservation
